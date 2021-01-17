@@ -14,8 +14,8 @@ $(document).ready(function() {
     $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
   });
 
-  $(".unstyled").click(function() {
+  $("ul").click(function() {
     $(this).children("li").css("background-color", "green");
-    //alert("Hey");
+    //$(this).remove();
   })
 });
