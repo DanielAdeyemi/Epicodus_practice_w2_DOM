@@ -14,8 +14,17 @@ $(document).ready(function() {
     $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
   });
 
-  $("ul").click(function() {
-    //$(this).children("li").css("background-color", "green");
-    $(this).remove();
-  })
+  /*$("ul").click(function() {
+    $(this).children("li").css("background-color", "green");
+    $(this).children("li").remove();
+  }); */
+
+  $(".unstyled").click(function() {
+    //alert("hi");
+    $(this).before("<ul id='hi'>Hi</ul>");
+  });
+
+  $("#hi").click(function() {
+    alert("Hey");
+  });
 });
