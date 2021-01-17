@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 
   $("ul").click(function() {
-    $(this).children("li").css("background-color", "green");
-    //$(this).remove();
+    //$(this).children("li").css("background-color", "green");
+    $(this).remove();
   })
 });
